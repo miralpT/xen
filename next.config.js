@@ -7,6 +7,9 @@ const nextConfig = {
   },
   basePath: process.env.NODE_ENV === "production" ? "/xen" : "",
   assetPrefix: process.env.NODE_ENV === "production" ? "/xen/" : "",
+  experimental: {
+    serverComponentsExternalPackages: [],
+  },
 };
 
 export default nextConfig;

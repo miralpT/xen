@@ -6,7 +6,6 @@ import LiquidEther from "../components/LiquidEther";
 import ShinyText from "../components/ShinyText";
 import RotatingText from "../components/RotatingText";
 import TargetCursor from "../components/TargetCursor";
-import Image from "next/image";
 
 export default function Home() {
   const [currentReality, setCurrentReality] = useState(0);
@@ -105,13 +104,10 @@ export default function Home() {
 
             {/* Xen Logo */}
             <div className="mb-4 sm:mb-6 pointer-events-none select-none">
-              <Image
+              <img
                 src="/images/xen-logo.svg"
                 alt="Xen Logo"
-                width={200}
-                height={206}
                 className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 drop-shadow-2xl"
-                priority
               />
             </div>
             <div className="text-lg sm:text-xl md:text-2xl text-zinc-300 mx-auto font-smooch-sans font-light flex items-center justify-center transition-all duration-300 pointer-events-none select-none mb-8 sm:mb-12 md:mb-16 lowercase px-4">
