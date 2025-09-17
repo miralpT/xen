@@ -1,13 +1,13 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: "export",
   trailingSlash: true,
   images: {
-    unoptimized: true
+    unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/REPO_ADIN' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/REPO_ADIN/' : '',
+  basePath: process.env.NODE_ENV === "production" ? "/xen" : "",
+  assetPrefix: process.env.NODE_ENV === "production" ? "/xen/" : "",
 };
 
 export default nextConfig;
