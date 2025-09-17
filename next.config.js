@@ -1,6 +1,7 @@
-import type { NextConfig } from "next";
+import { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
+  basePath: "/xen",
   output: "export",
   trailingSlash: true,
   images: {
