@@ -1,7 +1,6 @@
 import { NextConfig } from "next";
 
 const nextConfig = {
-  basePath: "/xen",
   output: "export",
   trailingSlash: true,
   images: {
