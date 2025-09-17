@@ -105,7 +105,7 @@ export default function Home() {
             {/* Xen Logo */}
             <div className="mb-4 sm:mb-6 pointer-events-none select-none">
               <img
-                src="/images/xen-logo.svg"
+                src={process.env.NODE_ENV === "production" ? "/xen/images/xen-logo.svg" : "/images/xen-logo.svg"}
                 alt="Xen Logo"
                 className="w-6 h-6 sm:w-8 sm:h-8 md:w-12 md:h-12 lg:w-16 lg:h-16 drop-shadow-2xl"
               />
